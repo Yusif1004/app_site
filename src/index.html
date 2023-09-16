@@ -1,22 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div id="panel" class="bg-light sidebar"></div>
-      <div id = "site" class="content">
-        <div class="row">
-        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Мебельный магазин</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Логотип магазина">
         </div>
-      </div>
+        <nav>
+            <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Поиск</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+                <li><a href="#">Избранное</a></li>
+                <li><a href="#" class="catalog-link">Каталог</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Кнопка для открытия каталога -->
+    <button id="catalog-button">Открыть каталог</button>
+
+    <!-- Модальное окно каталога -->
+    <div id="catalog-modal" class="modal">
+        <div class="modal-content">
+            <!-- Содержимое каталога -->
+            <h2>Каталог мебели</h2>
+            <!-- Здесь может быть ваше содержимое каталога -->
+            <button id="close-catalog">Закрыть</button>
+        </div>
     </div>
-    <h1>Hello,fadfadsfadsfadsfdasf world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+
+    <!-- Остальное содержимое страницы -->
+
+    <script src="script.js"></script>
+</body>
 </html>
